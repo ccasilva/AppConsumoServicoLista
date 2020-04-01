@@ -17,7 +17,6 @@ class _HomeState extends State<Home> {
 
     http.Response response = await http.get( _urlBase + "/posts");
     var dadosJson = json.decode( response.body );
-
     List<Post> postagens = List();
 
     for(var post in dadosJson){
